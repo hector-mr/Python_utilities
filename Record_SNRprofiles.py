@@ -674,7 +674,7 @@ for idx, path in enumerate(path_files):
         
         cols.append([0.])
         
-        r_conc = np.concatenate((r[ag]/pc_to_cm, r[ag][-1]/pc_to_cm + r_amb[ag]/pc_to_cm), axis=0)
+        r_conc = np.concatenate((r[ag]/pc_to_cm, r_amb[ag]/pc_to_cm), axis=0)
         r_Table = fits.Column(name = 'r', format='1E', unit='pc', array = r_conc)
         
         lagm_conc = np.concatenate((lagm[ag], lagm[ag][-1] + lagm_amb[ag]), axis=0)
