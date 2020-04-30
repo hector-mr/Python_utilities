@@ -2,7 +2,7 @@
 # coding: utf-8
 
 '''
-Sort ads_groups alphabetically based on first author, not on type (book, article, inproceedings,...)
+Sort LaTex bibliography elements alphabetically based on first author, not on type (book, article, inproceedings,...)
 '''
 
 import argparse
